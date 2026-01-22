@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Escalante - Web Portfiolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="side-nav">
+        <a href="#hero" class="nav-dot active" aria-label="Home">
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#about" class="nav-dot" aria-label="About">
+            <span class="nav-label">About</span>
+        </a>
+        <a href="#skills" class="nav-dot" aria-label="Skills">
+            <span class="nav-label">Skills</span>
+        </a>
+        <a href="#projects" class="nav-dot" aria-label="Projects">
+            <span class="nav-label">Projects</span>
+        </a>
+        <a href="#contact" class="nav-dot" aria-label="Contact">
+            <span class="nav-label">Contact</span>
+        </a>
+    </nav>
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Andrei Escalante</span></h1>
+            <h2>Web Developer → QA Engineer</h2>
+            <p>Dedicated and passionate fourth-year BSIT student with Web Development and UI/UX design skills. Transitioning into Quality Assurance because I enjoy digging into systems, finding issues before ends users do. </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">Get In Touch</button>
+                <button class="btn btn-outline" onclick="scrollToSection('projects')">View My Work</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Dreinosaurus" target="_blank" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/escalante-andrei/" target="_blank" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a href="mailto:escalante.christopherandrei@gmail.com" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m2 7 10 7 10-7"/>
+                    </svg>
+                </a>
+            </div>
+            <button class="scroll-arrow" onclick="scrollToSection('about')" aria-label="Scroll to next section">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"/>
+                    <polyline points="19 12 12 19 5 12"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="scroll-reveal">About Me</h2>
+            <div class="cards">
+                <div class="card scroll-reveal">
+                    <h3>Web Developer</h3>
+                    <p>3+ years of experience building responsive, user-friendly web applications using modern technologies and best practices.</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <h3>UI & UX Designer</h3>
+                    <p>Creating intuitive and visually appealing user interfaces with focus on user experience, accessibility, and modern design principles.</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <h3>QA Aspirant</h3>
+                    <p>Currently learning automated testing, test case design, and quality assurance methodologies to transition into a QA Engineer role.</p>
+                </div>
+                <div class="card scroll-reveal">
+                    <h3>Professional Growth</h3>
+                    <p>Committed to continuous learning and improvement, bridging development and quality assurance for better software delivery.</p>
+                </div>
+            </div>
+            <div class="about-text scroll-reveal">
+                <p>My journey as a web developer has given me deep insights into the development lifecycle, which I'm now leveraging to pursue a career in Quality Assurance.</p>
+                <p>I'm actively building my QA skillset through certifications, hands-on testing projects, and learning industry-standard tools like Selenium, Jest, Cypress, and Postman.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="scroll-reveal">Skills & Expertise</h2>
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('webdev')">Web Development</button>
+                <button class="tab" onclick="switchTab('uiux')">UI/UX Designer</button>
+                <button class="tab" onclick="switchTab('qa')">QA Engineering</button>
+            </div>
+            <div class="tab-content active" id="webdev">
+                <div class="skills-grid">
+                    <div class="skill">HTML/CSS</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Tailwind CSS</div>
+                    <div class="skill">Bootstrap</div>
+                    <div class="skill">Git</div>
+                </div>
+            </div>
+            <div class="tab-content" id="uiux">
+                <div class="skills-grid">
+                    <div class="skill">Figma</div>
+                    <div class="skill">Wireframing</div>
+                    <div class="skill">Prototyping</div>
+                    <div class="skill">User Research</div>
+                    <div class="skill">Design Systems</div>
+                    <div class="skill">Responsive Design</div>
+                    <div class="skill">Accessibility</div>
+                </div>
+            </div>
+            <div class="tab-content" id="qa">
+                <p class="note"><strong>Currently Learning:</strong> These QA skills are being actively developed through coursework, certifications, and hands-on projects.</p>
+                <div class="skills-grid">
+                    <div class="skill">Manual Testing</div>
+                </div>
+            </div>
+            <h3>Tools & Technologies</h3>
+            <div class="badges">
+                <span>VS Code</span><span>Visual Studio</span><span>IntelliJ</span><span>Eclipse</span>
+                <span>Figma</span><span>Canva</span><span>CapCut</span><span>DaVinci Resolve</span>
+            </div>
+            <h3>AI Tools</h3>
+            <div class="badges">
+                <span>Cursor</span> <span>GitHub Copilot</span><span>Claude Code</span><span>ChatGPT</span><span>Deep Seek</span><span>Gemini</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="scroll-reveal">Projects & Work</h2>
+            <div class="projects-grid">
+                <div class="project scroll-reveal">
+                    <img src="assets\QR Code Based Client Monitoring System.png" alt="Client Management System">
+                    <span class="badge dev">Web Application</span>
+                    <h3>DTC Palawan - QR Code-Based Client Management System</h3>
+                    <p>A web-based application that aims to enhance the operational process of the Digital Transformation Center - Palawan in a radical way.</p>
+                    <div class="tags">
+                        <span>PHP</span><span>JavaScript</span><span>Tailwind CSS</span><span>Bootstrap</span>
+                    </div>
+                    <div class="links">
+                        <a href="to be followed up" class="btn btn-small">Code</a>
+                        <a href="https://dtc-palawan.site/" class="btn btn-primary-small" target="_blank">Demo</a>
+                    </div>
+                </div>
+
+                <div class="project scroll-reveal">
+                    <img src="assets\DTC UI DESIGN.png" alt="DTC Palawan UI Design">
+                    <span class="badge design">UI/UX Design</span>
+                    <h3>DTC Palawan - QR Code System UI Design</h3>
+                    <p>Complete UI/UX design for the Digital Transformation Center client monitoring system, featuring modern interface and user-friendly workflows.</p>
+                    <div class="tags">
+                        <span>Figma</span><span>UI Design</span><span>Prototyping</span><span>Design System</span>
+                    </div>
+                    <div class="links">
+                        <a href="#To Be Followed" class="btn btn-primary-small">View Design</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="scroll-reveal">Get In Touch</h2>
+            <div class="contact-grid scroll-reveal">
+                <div>
+                    <p>I'm currently open to new opportunities in Web Development, UI & UX Design and QA Engineering. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-info">
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:escalante.christopherandrei@gmail.com">escalante.christopherandrei@gmail.com</a>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+639942215167">+63 994 221 5167</a>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Puerto Princesa, Palawan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-placeholder">
+                    <div class="placeholder-content">
+                        <h3>Let's Connect!</h3>
+                        <p>Feel free to reach out through any of the contact methods listed, or connect with me on social media.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Andrei Escalante</h3>
+                    <p>Web Developer aspiring to become a QA Engineer. Building quality software through code and testing.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <div class="social">
+                        <a href="https://github.com/Dreinosaurus" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/escalante-andrei/" target="_blank">LinkedIn</a>
+                        <a href="mailto:escalante.christopherandrei@gmail.com" target="_blank">Email</a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Christopher Andrei Escalante © <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
