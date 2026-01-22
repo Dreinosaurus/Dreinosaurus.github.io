@@ -1,18 +1,14 @@
 # 👨‍💻 Andrei Escalante - Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dreinosaurus.github.io/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > A modern, responsive portfolio website showcasing my journey from Web Development to Quality Assurance Engineering.
 
-![Portfolio Preview](assets/preview.png)
 
 ## 🚀 About Me
 
 Hi! I'm **Andrei Escalante**, a dedicated fourth-year BSIT student with a passion for Web Development and UI/UX design. I'm currently transitioning into **Quality Assurance Engineering** because I enjoy digging into systems and finding issues before end users do.
 
 - 🔭 Currently learning automated testing and QA methodologies
-- 🌱 Building expertise in Selenium, Jest, Cypress, and Postman
 - 📍 Based in Puerto Princesa, Palawan
 - 💼 Open to opportunities in Web Development, UI/UX Design, and QA Engineering
 
@@ -66,29 +62,6 @@ WEB PORTFOLIO/
 ### View Live
 Visit the live site: [dreinosaurus.github.io](https://dreinosaurus.github.io/)
 
-### Run Locally
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Dreinosaurus/Dreinosaurus.github.io.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd Dreinosaurus.github.io
-```
-
-3. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve
-```
-
-4. Visit `http://localhost:8000` in your browser
-
 ## 📱 Responsive Breakpoints
 
 - **Mobile**: < 768px
@@ -130,10 +103,6 @@ Complete UI/UX design system for the client monitoring platform.
 - **GitHub**: [github.com/Dreinosaurus](https://github.com/Dreinosaurus)
 - **Phone**: +63 994 221 5167
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 💡 Inspiration & Credits
 
 This portfolio was designed and developed from scratch with inspiration from modern web design trends and best practices in user experience.
@@ -148,6 +117,6 @@ This portfolio was designed and developed from scratch with inspiration from mod
 
 ---
 
-**Built with ❤️ by Andrei Escalante**
+**Built by Andrei Escalante**
 
 *Last Updated: January 2026*
